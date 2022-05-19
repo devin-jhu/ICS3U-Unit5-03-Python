@@ -49,7 +49,7 @@ def percentage(level):
         percentage_number = 30
 
     else:
-        percentage_number = 0
+        percentage_number = -1
 
     return percentage_number
 
@@ -62,7 +62,7 @@ def main():
 
     percentage_number = percentage(level)
 
-    if percentage_number == 0:
+    if percentage_number == -1:
         print("not a percentage")
     else:
         print("Level {0} is {1}%.".format(level, percentage_number))
